@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>password-generator</title>
+</head>
+<body>
+    <div id="alertaria">
+        <div class="alert" id="1noalert">
+            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+            <strong>Don't</strong> choose multiple password type . choose only one 
+          </div>
+        <div class="alert" id="2noalert">
+            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+            <strong>Please</strong>  checked any password type 
+          </div>
+    </div>
+    <div id="blox">
+    <div id="main">
+        <h1 class="title">Password Generator</h1>
+        <p class="title" id="info"> please pick any password type</p>
+        <div id="tool">
+                        <span class="aria">
+            <p class="text"><i> Super</i> <strong>Strong</strong> password</p>
+            <label class="switch">
+                <input type="checkbox" id="hard">
+                <span class="slider" id="green"></span>
+              </label>
+              </span>
+                        <span class="aria">
+              <p class="text"><strong>Strong</strong> password</p>
+              <label class="switch">
+                <input type="checkbox" id="mid">
+                <span class="slider" id="yellow"></span>
+              </label>
+              </span>
+                <span class="aria">             
+              <p class="text">Weak password</p>
+              <label class="switch">
+                  <input type="checkbox" id="easy">
+                  <span class="slider" id="red"></span>
+              </label>
+              </span>
+              <span class="aria"> 
+              <p class="text">funny password</p>
+              <label class="switch">
+                  <input type="checkbox" id="funny">
+                  <span class="slider" id="funny"></span>
+              </label>
+              </span>
+              
+              <span class="aria">
+              <p class="text">Set your password length</p>
+
+              <input type="number" name="" id="getpass" value="8" min="8" max="20">
+            </span>
+
+        </div>
+        <span id="input">
+        
+            <input type="submit"  id="get" value="Get Your Password">
+        </span>
+    </div>
+</div>
+
+<script src="logic.js"></script>
+</body>
+</html>
